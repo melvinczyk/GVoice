@@ -1,0 +1,4 @@
+services:
+  gvoice:
+    build: .
+    env_file: ".env"
