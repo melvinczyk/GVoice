@@ -5,6 +5,6 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./src ./src
+COPY ./src .
 
-ENTRYPOINT ["python", "-main.py", "--port", "8000"]
+ENTRYPOINT ["python", "main.py", "--port", "8000"]
